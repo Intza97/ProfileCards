@@ -1,64 +1,58 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<html lang="es">
+<head>
   <!--==================== METADATOS ====================-->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <meta name="description" content="ProfileCards">
-      <meta name="keywords" content="HTML-CSS-JS">
-      <meta name="author" content="Rocio Cuello">
-      
-      <!--==================== CSS ====================-->
-      <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="ProfileCards">
+  <meta name="keywords" content="HTML-CSS-JS">
+  <meta name="author" content="Rocio Cuello">
 
-      <!--==================== TITULO ====================-->
-      <title>Cards | Tarjeta de usuario en modo oscuro y claro</title>
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-      <!--==================== ICONO DE PESTAÑA ====================-->
-      <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+  <!--==================== TITULO ====================-->
+  <title>ProfileCards | Tarjeta de usuario en modo oscuro y claro</title>
 
-      <!--==================== CDN ====================-->
+  <!--==================== ICONO DE PESTAÑA ====================-->
+  <link rel="icon" sizes="64x64" href="assets/img/favicon.webp">
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <section class="sec">
-      <div class="card">
-        <div class="toggle"></div>
-        <div class="content">
-          <div class="imgText">
-            <div class="imgBx">
-              <img src="assets/img/pexels-sindre-fs-1187765.webp" alt="" />
-            </div>
-            <h3>Alex Trochut<br /><span>Desiñador Grafico</span></h3>
+  <!--==================== ICONOS ====================-->
+  <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous"  referrerpolicy="no-referrer" />
+</head>
+<body>
+  <section class="sec">
+    <div class="card">
+      <div class="toggle"></div>
+      <div class="content">
+        <div class="imgText">
+          <div class="imgBx">
+            <img src="assets/img/pexels-sindre-fs-1187765.webp" alt="" />
           </div>
-          <ul class="sci">
-            <li>
-              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            </li>
-          </ul>
+          <h3>Alex Trochut<br /><span>Desiñador Grafico</span></h3>
         </div>
+        <ul class="sci">
+          <li>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+        </ul>
       </div>
-    </section>
-    <script>
-      const sec = document.querySelector(".sec");
-      const toggle = document.querySelector(".toggle");
-      toggle.onclick = function () {
-        sec.classList.toggle("dark");
-      };
-    </script>
-  </body>
+    </div>
+  </section>
+   <!--==================== SCRIPT ====================-->
+  <script>
+    const sec = document.querySelector(".sec");
+    const toggle = document.querySelector(".toggle");
+    toggle.onclick = function () {
+      sec.classList.toggle("dark");
+    };
+  </script>
+</body>
 </html>
